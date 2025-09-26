@@ -1,0 +1,30 @@
+#sticky-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+    background-color: black;
+    position: sticky;
+    left: -10px;
+}
+
+body{
+    background-color: black;
+}
+
+.move-horizontal{
+    color: white;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+}
+
+#right-to-left{
+    transform: rotate(180deg);
+}
+@keyframes left-to-right{
+
+}
+
+@keyframes right-to-left{
+
+}
