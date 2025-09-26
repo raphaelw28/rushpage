@@ -28,8 +28,38 @@
 
     <section id="contact">
         <div class="contact-square">
-            <h2>Contact Us</h2>
-            <p>Email:</p>
+            <form id="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="instagram" placeholder="Instagram" required>
+                </div>
+                <div class="form-row">
+                    <input type="major" name="major" placeholder="Major" required>
+                </div>
+                <div class="form-row">
+                    <label for="year">Year in School:
+                        <input type="radio" name="year" value="freshman" required> Freshman
+                        <input type="radio" name="year" value="sophomore" required> Sophomore
+                        <input type="radio" name="year" value="junior" required> Junior 
+                        <input type="radio" name="year" value="senior" required> Senior
+                    </label>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="interests" placeholder="Tell us about yourself" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="referral" placeholder="How did you hear about us?" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="questions" placeholder="Any questions?">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+            
         </div>
 
     </section>
