@@ -1,0 +1,8 @@
+9/25 - ?
+- finish designing the contact page
+
+? - ? 
+- link the form from contact page to a google sheet
+
+? - ? 
+- create the calendar

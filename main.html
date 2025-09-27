@@ -33,13 +33,11 @@
                 <div class="form-row">
                     <input type="text" name="name" placeholder="Name" required>
                 </div>
-                <div class="form-row">
+                <div class="form-row" id="two-inputs">
                     <input type="text" name="instagram" placeholder="Instagram" required>
+                    <input type="text" name="major" placeholder="Major" required>
                 </div>
-                <div class="form-row">
-                    <input type="major" name="major" placeholder="Major" required>
-                </div>
-                <div class="form-row">
+                <div class="form-row radio-group">
                     <label for="year">Year in School:
                         <input type="radio" name="year" value="freshman" required> Freshman
                         <input type="radio" name="year" value="sophomore" required> Sophomore
@@ -48,13 +46,13 @@
                     </label>
                 </div>
                 <div class="form-row">
-                    <input type="text" name="interests" placeholder="Tell us about yourself" required>
+                    <textarea name="referral" placeholder="How did you hear about us?" required></textarea> 
                 </div>
                 <div class="form-row">
-                    <input type="text" name="referral" placeholder="How did you hear about us?" required>
+                    <textarea name="interests" placeholder="Tell us about yourself" required></textarea>
                 </div>
                 <div class="form-row">
-                    <input type="text" name="questions" placeholder="Any questions?">
+                    <textarea placeholder="Any questions?"></textarea> 
                 </div>
                 <button type="submit">Submit</button>
             </form>
