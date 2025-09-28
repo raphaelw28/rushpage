@@ -19,11 +19,22 @@
             <img src="nualphaphilogo.jpeg" target="_blank">
         </section>
     </header>
+
     <section id="introduction"> 
-        <p class="move-horizontal" id="left-to-right">
-            NU ALPHA PHI
-            RUSH SPRING 2026
-        </p>
+        <div id="marquee">
+            <span class="move-horizontal">
+                NU ALPHA PHI
+                RUSH SPRING 2026
+            </span>
+            <span class="move-horizontal">
+                NU ALPHA PHI
+                RUSH SPRING 2026
+            </span>
+            <span class="move-horizontal">
+                NU ALPHA PHI
+                RUSH SPRING 2026
+            </span>
+        </div>
     </section>
 
     <section id="contact">
@@ -38,23 +49,34 @@
                     <input type="text" name="major" placeholder="Major" required>
                 </div>
                 <div class="form-row radio-group">
-                    <label for="year">Year in School:
-                        <input type="radio" name="year" value="freshman" required> Freshman
-                        <input type="radio" name="year" value="sophomore" required> Sophomore
-                        <input type="radio" name="year" value="junior" required> Junior 
-                        <input type="radio" name="year" value="senior" required> Senior
-                    </label>
+                        <span id="yearid">Year: </span>
+                        <label class="radio-label">
+                            <input type="radio" name="year" value="freshman" required> 
+                                <span>Freshman</span>
+                        </label>
+                        <label class="radio-label" >
+                            <input type="radio" name="year" value="sophomore" required> 
+                                <span>Sophomore</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="year" value="junior" required>
+                                <span>Junior</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="year" value="senior" required>
+                                <span>Senior</span>
+                        </label>
                 </div>
                 <div class="form-row">
-                    <textarea name="referral" placeholder="How did you hear about us?" required></textarea> 
+                    <textarea id="referral" name="referral" placeholder="How did you hear about us?" required></textarea> 
                 </div>
                 <div class="form-row">
-                    <textarea name="interests" placeholder="Tell us about yourself" required></textarea>
+                    <textarea name="interests" placeholder="Tell us about yourself" ></textarea>
                 </div>
                 <div class="form-row">
                     <textarea placeholder="Any questions?"></textarea> 
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </form>
             
             
