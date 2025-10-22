@@ -4,10 +4,14 @@
     justify-content: center;
     height: 60px;
     background-color: black;
+    position: static;
+}
+
+
+header{
     position: sticky;
     top: 0;
-    z-index: 10;
-    overflow: hidden;
+    z-index: 9999;
 }
 
 #marquee {
@@ -202,6 +206,7 @@ button[type=submit]:active{
   color: white;
   min-height: 80vh;
   margin-top: 60px;
+  width: 100%;
 }
 
 
@@ -302,4 +307,17 @@ button[type=submit]:active{
 
 .day-name:hover .calendar-event{
     opacity: 0;
+}
+
+
+/*INVASION SECTION______________________________________*/
+#invasion-section {
+    background-color: rgb(61, 12, 12);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
