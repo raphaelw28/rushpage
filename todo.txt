@@ -6,6 +6,7 @@ todo-list in the future
 -link form from contact page to a google sheet
 -create the calendar
 -invasion section
+-marquee the nu alpha phi
 
 
 

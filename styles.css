@@ -5,7 +5,8 @@
     height: 60px;
     background-color: black;
     position: sticky;
-    left: -10px;
+    top: 0;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -160,8 +161,8 @@ textarea{
 }
 
 .radio-label:has(input[type="radio"]:checked)::before {
-  background: maroon;
-  border-color: maroon;
+  background: rgb(156, 4, 4);
+  border-color: rgb(156, 4, 4);
   box-shadow: inset 0 0 0 2px white;
 }
 
@@ -187,4 +188,118 @@ button[type=submit]:active{
     transform: scale(1);
     background-color: rgb(116, 37, 37);
     color: rgb(175, 161, 161);
+}
+
+/*CALENDAR SECTION______________________________________*/
+
+#calendar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: rgb(116, 110, 110);     
+  color: white;
+  min-height: 80vh;
+  margin-top: 60px;
+}
+
+
+#calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    flex-direction: column;
+    background-color: rgb(155, 148, 148);
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    transition: 0.2 ease;
+    border: none;
+    border-radius: 5px;
+    gap: 2px;
+}
+
+.day-name{
+    border: 1px solid black;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: 0;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+
+}
+
+.day-name:hover{
+    background-color: rgba(128, 124, 124, 1);
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.date{
+    position: absolute;
+    top: 0.5rem;
+    right: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.calendar-event{
+    display: block;
+    color: white;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+#calendar-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+#calendar-note{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'Arial', sans-serif;
+    margin-left: auto;
+    margin-right: 8.5vw;
+}
+
+.event-details {
+    margin: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    color: rgba(29, 26, 26, 0.623);
+    position: absolute;
+}
+
+.day-name:hover .event-details{
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 0.3rem;
+}
+
+.day-name:hover .calendar-event{
+    opacity: 0;
 }
